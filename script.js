@@ -175,17 +175,69 @@
 
 // console.log(jonas);
 
-const calcAge = function(birthYear) {
-    return 2037 - birthYear;
+// const calcAge = function(birthYear) {
+//     return 2037 - birthYear;
+// }
+// const years = [1990, 1967, 2002, 2010, 2018];
+// // console.log(calcAge(years));
+
+// const age1 = calcAge(years[0]);
+// const age2 = calcAge(years[1]);
+// const age3 = calcAge(years[years.length - 1]);
+// console.log(age1, age2, age3);
+
+// const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
+
+// console.log(ages);
+
+
+//add element in array
+// const friends = ['Michael', 'Steven', 'Peter'];
+// const newLenth = friends.push('jay');
+// console.log(friends)
+// console.log(newLenth)
+
+// friends.unshift('John');
+// console.log(friends);
+
+// //remove element in array
+
+// friends.pop();
+// const popped = friends.pop();
+// console.log(popped);
+// console.log(friends);
+
+// friends.shift();
+// console.log(friends);
+
+// console.log(friends.indexOf('Steven'));
+// console.log(friends.indexOf('Bob'));
+// console.log(friends.includes('Steven'));
+// console.log(friends.includes('Bob'));
+
+
+bills = [125, 555, 44];
+const calcTip = (bill) => {
+    if (bill >= 50 && bill <= 300) {
+        const tip = bill * .15;
+        return tip;
+    } else {
+        const tip = bill * .20;
+        return tip;
+    }
+
 }
-const years = [1990, 1967, 2002, 2010, 2018];
-// console.log(calcAge(years));
 
-const age1 = calcAge(years[0]);
-const age2 = calcAge(years[1]);
-const age3 = calcAge(years[years.length - 1]);
-console.log(age1, age2, age3);
+// const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
 
-const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
+console.log(calcTip(100));
 
-console.log(ages);
+
+tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+
+console.log(tips);
+console.log(bills, tips);
+
+// const totalValue = [(bills[0] + tips[0]), (bills[1] + tips[1]), (bills[2] + tips[2])];
+
+// console.log(totalValue);
