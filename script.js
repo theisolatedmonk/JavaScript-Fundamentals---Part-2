@@ -133,21 +133,59 @@
 // console.log(10,20,30)
 // 1.
 
-const calcAverage = (score1, score2, score3) => {
-    return (score1 + score2 + score3) / 3
+// const calcAverage = (score1, score2, score3) => {
+//     return (score1 + score2 + score3) / 3
+// }
+// console.log(calcAverage(44, 23, 71));
+// console.log(calcAverage(65, 54, 49))
+
+// const checkWinner = (avgDolhins, avgKoalas) => {
+//     if (avgDolhins >= 2 * avgKoalas) {
+//         console.log(` Dolhins Win (${avgDolhins} vs. ${avgKoalas})`)
+//     } else if (avgKoalas >= 2 * avgDolhins) {
+//         console.log(`  Koalas Win (${avgKoalas} vs. ${avgDolhins})`)
+//     } else {
+//         console.log(` No team wins! `)
+//     }
+
+// }
+// checkWinner(calcAverage(44, 23, 71), calcAverage(65, 54, 49))
+
+//Array
+
+// const friend1 = 'Michael';
+// const friend2 = 'Steven';;
+// const Peter = 'Peter';
+
+// const friends = ['Michael', 'Steven', 'Peter'];
+// console.log(friends);
+
+// const year = new Array(1991, 1984, 2008, 2020);
+// console.log(friends[0]);
+// console.log(friends[2]);
+
+// console.log(friends.length);
+// console.log(friends[friends.length - 1]);
+
+// friends[2] = 'Jay'
+// console.log(friends);
+
+// const firstName = 'Jonas'
+// const jonas = [firstName, 'Schmedtmann', 2037 - 1911, 'teacher', friends];
+
+// console.log(jonas);
+
+const calcAge = function(birthYear) {
+    return 2037 - birthYear;
 }
-console.log(calcAverage(44, 23, 71));
-console.log(calcAverage(65, 54, 49))
+const years = [1990, 1967, 2002, 2010, 2018];
+// console.log(calcAge(years));
 
-const checkWinner = (avgDolhins, avgKoalas) => {
-    if (avgDolhins >= 2 * avgKoalas) {
-        console.log(` Dolhins Win (${avgDolhins} vs. ${avgKoalas})`)
-    } else if (avgKoalas >= 2 * avgDolhins) {
-        console.log(`  Koalas Win (${avgKoalas} vs. ${avgDolhins})`)
-    } else {
-        console.log(` No team wins! `)
-    }
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length - 1]);
+console.log(age1, age2, age3);
 
-}
+const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
 
-checkWinner(calcAverage(44, 23, 71), calcAverage(65, 54, 49))
+console.log(ages);
