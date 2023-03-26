@@ -216,28 +216,51 @@
 // console.log(friends.includes('Bob'));
 
 
-bills = [125, 555, 44];
-const calcTip = (bill) => {
-    if (bill >= 50 && bill <= 300) {
-        const tip = bill * .15;
-        return tip;
-    } else {
-        const tip = bill * .20;
-        return tip;
-    }
+// bills = [125, 555, 44];
+// const calcTip = (bill) => {
+//     if (bill >= 50 && bill <= 300) {
+//         const tip = bill * .15;
+//         return tip;
+//     } else {
+//         const tip = bill * .20;
+//         return tip;
+//     }
 
-}
+// }
 
 // const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
 
-console.log(calcTip(100));
+// console.log(calcTip(100));
 
 
-tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+// tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 
-console.log(tips);
-console.log(bills, tips);
+// console.log(tips);
+// console.log(bills, tips);
 
 // const totalValue = [(bills[0] + tips[0]), (bills[1] + tips[1]), (bills[2] + tips[2])];
 
 // console.log(totalValue);
+
+
+// object
+
+const jonasArray = [
+    'jonas',
+    'Schmedtmann',
+    2037 - 1911,
+    'teacher' ['Michael', 'Peter', 'Steven']
+];
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtmann',
+    age: 2037 - 1911,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven']
+
+};
+
+console.log(jonas);
+console.log(jonas.lastName);
+console.log(jonas['lastName']);
