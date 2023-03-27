@@ -252,15 +252,76 @@ const jonasArray = [
     'teacher' ['Michael', 'Peter', 'Steven']
 ];
 
-const jonas = {
-    firstName: 'Jonas',
-    lastName: 'Schmedtmann',
-    age: 2037 - 1911,
-    job: 'teacher',
-    friends: ['Michael', 'Peter', 'Steven']
+// const jonas = {
+//     firstName: 'Jonas',
+//     lastName: 'Schmedtmann',
+//     age: 2037 - 1911,
+//     job: 'teacher',
+//     friends: ['Michael', 'Peter', 'Steven']
 
-};
+// };
 
-console.log(jonas);
-console.log(jonas.lastName);
-console.log(jonas['lastName']);
+// console.log(jonas);
+// console.log(jonas.lastName);
+// console.log(jonas['lastName']);
+
+
+// const nameKey = 'Name';
+// console.log(jonas['firstName' + nameKey]);
+// console.log(jonas['last' + nameKey]);
+
+// console.log(jonas.
+//     'last' + nameKey)
+
+
+// const jonas = {
+//     firstName: 'Jonas',
+//     lastName: 'Schmedtmann',
+//     birthYear: 1911,
+//     job: 'teacher',
+//     friends: ['Michael', 'Peter', 'Steven'],
+//     hasDriverLicense: true,
+
+// calcAge: function(birthYear) {
+//     return 2037 - birthYear;
+// }
+
+//     calcAge: function() {
+//         console.log(this);
+//         return 2037 - this.birthYear;
+//     }
+// };
+
+// console.log(jonas.calcAge());
+
+// console.log(jonas.calcAge(1991));
+// console.log(jonas['calcAge'](1991));
+
+
+// console.log('Lift weights repetitioon');
+// console.log('Lift weights repetitioon');
+// console.log('Lift weights repetitioon');
+// console.log('Lift weights repetitioon');
+// console.log('Lift weights repetitioon');
+// console.log('Lift weights repetitioon');
+
+
+// for (let rep = 1; rep <= 10; rep++) {
+//     console.log(`Lift weights repetition ${rep}`);
+// }
+
+// const jonas = ['Jonas', 'Schmedtmann', 2037 - 1991, 'teacher', ['Michael', 'Peter', 'Steven'], true];
+
+
+// const types = [];
+
+// for (let i = 0; i < jonas.length; i++) {
+//     console.log(jonas[i], typeof jonas[i]);
+
+//     types.push(typeof jonas[i]);
+
+// }
+
+// console.log(types);
+
+// const year =
