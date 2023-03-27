@@ -323,5 +323,3 @@ const jonasArray = [
 // }
 
 // console.log(types);
-
-// const year =
