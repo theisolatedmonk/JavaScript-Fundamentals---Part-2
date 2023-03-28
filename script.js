@@ -323,3 +323,101 @@ const jonasArray = [
 // }
 
 // console.log(types);
+
+
+// Coding Challenge #3
+
+// Let's go back to Mark and John comparing their BMIs! This time, let's use objects to
+// implement the calculations! Remember:  
+// Your tasks:
+// 1. For each of them, create an object with properties for their full name, mass, and
+
+// height (Mark Miller and John Smith)
+// 2. Create a 'calcBMI' method on each object to calculate the BMI (the same method on both objects). Store the BMI value to a property, and also return it from the method
+// 3. Log to the console who has the higher BMI, together with the full name and the
+// respective BMI. Example: "John's BMI (28.3) is higher than Mark's (23.9)!"
+// Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m
+// tall.
+
+// BMI = mass / height ** 2
+
+// const mark = {
+//     fullName: 'Mark Miller',
+//     mass: 78,
+//     height: 1.69,
+//     calcBMI: function() {
+//         this.bmi = this.mass / this.height ** 2;
+//         return this.bmi;
+//     }
+
+// }
+
+// const john = {
+//     fullName: 'John Smithr',
+//     mass: 92,
+//     height: 1.95,
+//     calcBMI: function() {
+//         this.bmi = this.mass / this.height ** 2;
+//         return this.bmi;
+//     }
+
+
+// }
+// mark.calcBMI();
+// john.calcBMI();
+
+// console.log(mark.bmi, john.bmi);
+
+// if (mark.bmi > john.bmi) {
+//     console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s BMI(${john.bmi})`)
+// } else if (john.bmi > mark.bmi) {
+//     console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s BMI(${mark.bmi})`)
+// }
+
+
+//dice
+// let dice = Math.trunc(Math.random() * 6) + 1;
+// console.log(dice);
+
+
+// while (dice !== 6) {
+//     console.log(`You rolled a ${dice}`);
+//     dice = Math.trunc(Math.random() * 6) + 1;
+//     if (dice === 6) console.log('Loop is about to end');
+// }
+
+
+// Coding Challenge #4
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+
+const tips = [];
+const totals = [];
+const calcTip = (bill) => {
+        if (bill >= 50 && bill <= 300) {
+            const tip = bill * .15;
+            return tip;
+        } else {
+            const tip = bill * .20;
+            return tip;
+        }
+    }
+    // consnt totalValue = bill[] + tip[];
+for (let i = 0; i < bills.length; i++) {
+    const tip = calcTip(bills[i]);
+    tips.push(tip);
+    totals.push(tip + bills[i]);
+
+}
+console.log(bills, tips, totals);
+
+const calcAverage = function(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return sum / arr.length;
+}
+console.log(calcAverage([2, 3, 7]));
+console.log(calcAverage(totals));
+console.log(calcAverage(tips));
